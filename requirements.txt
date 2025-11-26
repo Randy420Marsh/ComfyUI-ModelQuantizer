@@ -23,8 +23,10 @@ pyyaml>=5.1            # For configuration file support
 
 # System requirements for GGUF quantization:
 # - Minimum 96GB RAM (for large diffusion models)
+# - sd1.5 and XL 32GB is fine
 # - CUDA-compatible GPU (recommended)
 # - Python 3.8+ with PyTorch 2.0+
 # - Sufficient storage space for temporary files during processing
+
 
 
