@@ -7,7 +7,7 @@ numpy>=1.17.0
 # Additional dependencies for ControlNet FP8 quantization
 #tensorflow>=2.13.0
 tensorflow[and-cuda]
-rensorrt
+tensorrt
 tensorflow-model-optimization>=0.7.0
 
 # Additional dependencies for GGUF quantization
@@ -27,6 +27,7 @@ pyyaml>=5.1            # For configuration file support
 # - CUDA-compatible GPU (recommended)
 # - Python 3.8+ with PyTorch 2.0+
 # - Sufficient storage space for temporary files during processing
+
 
 
 
