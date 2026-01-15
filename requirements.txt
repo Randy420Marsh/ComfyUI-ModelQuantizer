@@ -6,9 +6,14 @@ numpy>=1.17.0
 
 # Additional dependencies for ControlNet FP8 quantization
 #tensorflow>=2.13.0
-tensorflow[and-cuda]
 tensorrt
-tensorflow-model-optimization>=0.7.0
+
+#Disable if using numpy2 and up, and not needing the advanced calibration.
+#tensorflow-model-optimization>=0.7.0
+#tensorflow[and-cuda]
+
+#The dependency on tensorflow-model-optimization (and subsequently the older NumPy) is completely optional for the main functionality of the node. 
+#It is only used for a specific "Advanced Calibration" feature for ControlNet quantization that almost no one uses because standard quantization is sufficient.
 
 # Additional dependencies for GGUF quantization
 # Note: GGUF package is included in the gguf/ directory (from City96's tools)
@@ -27,6 +32,7 @@ pyyaml>=5.1            # For configuration file support
 # - CUDA-compatible GPU (recommended)
 # - Python 3.8+ with PyTorch 2.0+
 # - Sufficient storage space for temporary files during processing
+
 
 
 
